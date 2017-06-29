@@ -284,6 +284,7 @@ To style it:
     <span role="button"></span>
     <paper-menu-button
       id="menuButton"
+      ignore-select="[[ignoreSelect]]"
       vertical-align="[[verticalAlign]]"
       horizontal-align="[[horizontalAlign]]"
       vertical-offset="[[_computeMenuVerticalOffset(noLabelFloat)]]"
@@ -418,6 +419,11 @@ To style it:
            * dropdown.
            */
           noAnimations: {
+            type: Boolean,
+            value: false
+          },
+
+          ignoreSelect: {
             type: Boolean,
             value: false
           },

@@ -88,6 +88,7 @@ respectively.
     <span role="button"></span>
     <paper-menu-button
       id="menuButton"
+      ignore-select="[[ignoreSelect]]"
       vertical-align="[[verticalAlign]]"
       horizontal-align="[[horizontalAlign]]"
       dynamic-align="[[dynamicAlign]]"
@@ -243,6 +244,11 @@ respectively.
             value: false
           },
 
+          ignoreSelect: {
+            type: Boolean,
+            value: false
+          },
+
           /**
            * The orientation against which to align the menu dropdown
            * horizontally relative to the dropdown trigger.
@@ -270,7 +276,7 @@ respectively.
           dynamicAlign: {
             type: Boolean
           },
-            
+
           /**
            * Whether focus should be restored to the dropdown when the menu closes.
            */
